@@ -1,5 +1,5 @@
 // Import the express module
-const express = require('express');
+const express = require("express");
 
 // Create an instance of the Express app
 const app = express();
@@ -8,20 +8,20 @@ const app = express();
 app.use(express.json());
 
 // Define a basic route (GET)
-app.get('/', (req, res) => {
-  res.send('Welcome to the Express API!');
+app.get("/", (req, res) => {
+  res.send("Welcome to the Express API!");
 });
 
 // Define another route (GET) for an example API endpoint
-app.get('/api/greet', (req, res) => {
-  res.json({ message: 'Hello from the API!' });
+app.get("/api/greet", (req, res) => {
+  res.json({ message: "Hello from the API!" });
 });
 
 // POST endpoint to create a new greeting (example)
-app.post('/api/greet', (req, res) => {
+app.post("/api/greet", (req, res) => {
   const { name } = req.body;
   if (!name) {
-    return res.status(400).json({ error: 'Name is required' });
+    return res.status(400).json({ error: "Name is required" });
   }
   res.json({ message: `Hello, ${name}!` });
 });
