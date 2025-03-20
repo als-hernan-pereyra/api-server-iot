@@ -17,5 +17,8 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^5.2.3",
     "lint": "^0.8.19"
+  },
+  "eslintConfig": {
+    "extends": "./eslint.config.js"
   }
 }
