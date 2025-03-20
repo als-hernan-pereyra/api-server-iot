@@ -10,7 +10,7 @@ const eslintConfig = [
       prettier: require("eslint-plugin-prettier"), // Load Prettier plugin
     },
     rules: {
-      "no-console": "warn",
+      "no-console": "off", //"warn",
       "prettier/prettier": "error", // Prettier rules for code style
     },
   },
